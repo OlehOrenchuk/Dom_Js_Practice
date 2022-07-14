@@ -14,12 +14,9 @@ html {
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
-  /*background-color: #222;*/
   background-color: rgba(0,0,0,0.4);
-  /* background-color: #60b347; */
 }
 
-/* LAYOUT */
 header {
   position: relative;
   height: 35vh;
@@ -83,6 +80,12 @@ h1 {
   position: absolute;
   top: 2rem;
   left: 2rem;
+}
+.reset {
+  visibility: hidden;
+  position: absolute;
+  top: 6rem;
+  right: 2rem;
 }
 
 .guess {
