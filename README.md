@@ -5,7 +5,7 @@
 <h4>Game where player can guess the number within boundaries entered at the beginning of the game.</h4></li>
 <hr>
 <li><h2>Modal windows 🔲</h2>
-<h5>It`s just a small program with 3 modal windows which are open/close through pure JS.</h5></li>
+<h4>It`s just a small program with 3 modal windows which are open/close through pure JS.</h4></li>
 <hr>
 <li><h2>Third game</h2>
 <h5>Third game description</h5></li>
