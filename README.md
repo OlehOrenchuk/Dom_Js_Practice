@@ -7,7 +7,7 @@
 <li><h2>Modal windows 🔲</h2>
 <h4>It`s just a small program with 3 modal windows which are open/close through pure JS.</h4></li>
 <hr>
-<li><h2>Third game</h2>
+<li><h2>Pig game 🐷</h2>
 <h5>Third game description</h5></li>
 <hr>
 </ol>
