@@ -1,6 +1,5 @@
 'use strict';
 
-
 function randomIntFromInterval(min, max) {
     return Math.floor(Math.random()* (max - min + 1) + min)
 }
@@ -133,4 +132,3 @@ confirmButton.addEventListener('click',confirmNames)
 resetNamesButton.addEventListener('click',resetPage)
 openRulesButton.addEventListener('click',openRulesPage)
 closeRulesButton.addEventListener('click',closeRulesPage)
-
