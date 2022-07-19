@@ -8,18 +8,45 @@
     <title>Pig Game</title>
   </head>
   <body>
-    <main>
+    <div class="main_buttons">
+      <button class="rules">rules</button>
+      <button class="resetNames">reset players name</button>
+    </div>
+    <div class="rules_modal hidden">
+      <button class="close_modal">&times;</button>
+      <ul>
+        <p style="text-transform: uppercase;font-weight: 700;font-size: 30px;padding: 10px 0 70px 0">Game Die 🎲</p>
+        <li>AMOUNT OF PLAYERS: <h4 style="display: inline-block;color: yellow">2</h4></li>
+        <li>PLAY: press button <h4 style="display: inline-block;color: yellow">ROLL DICE</h4></li>
+        <li>SKIP MOVE: press button <h4 style="display: inline-block;color: yellow">HOLD</h4></li>
+        <li>WIN: <h4 style="display: inline-block;color: yellow">50 points</h4> in the current line</li>
+        <li>LOSE: roll a die with a <h4 style="display: inline-block;color: yellow">number 1</h4></li>
+        <li>After losing player`s current line score will be annulled</li>
+      </ul>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="input-name">
+      <p class="titleName">Pig Game 🐷</p>
+      <label>
+        <input type='text' class='first_player_name' placeholder='Enter 1-st player name'/>
+      </label>
+      <label>
+        <input type='text' class='second_player_name' placeholder='Enter 2-nd player name'/>
+      </label>
+      <button class="confirm">Confirm</button>
+    </div>
+    <main class="hidden">
       <section class="player player--0 player--active">
-        <h2 class="name" id="name--0">Player 1</h2>
-        <p class="score" id="score--0">43</p>
+        <h2 class="name" id="name--0"></h2>
+        <p class="score" id="score--0">0</p>
         <div class="current">
           <p class="current-label">Current</p>
           <p class="current-score" id="current--0">0</p>
         </div>
       </section>
       <section class="player player--1">
-        <h2 class="name" id="name--1">Player 2</h2>
-        <p class="score" id="score--1">24</p>
+        <h2 class="name" id="name--1"></h2>
+        <p class="score" id="score--1">0</p>
         <div class="current">
           <p class="current-label">Current</p>
           <p class="current-score" id="current--1">0</p>
@@ -28,9 +55,10 @@
 
       <img src="dice-5.png" alt="Playing dice" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
-      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--roll" onclick='playDice()'>🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>

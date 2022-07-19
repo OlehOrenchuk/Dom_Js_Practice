@@ -112,7 +112,7 @@ main {
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 400;
-  transition: all 0.2s;
+  transition: 0.2s all;
 
   background-color: white;
   background-color: rgba(255, 255, 255, 0.6);
@@ -121,6 +121,11 @@ main {
   padding: 0.7rem 2.5rem;
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #c7365f;
+  color: navajowhite;
 }
 
 .btn::first-letter {
@@ -149,6 +154,9 @@ main {
 }
 
 .dice {
+
+  visibility: hidden;
+
   position: absolute;
   left: 50%;
   top: 16.5rem;
@@ -164,4 +172,129 @@ main {
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+
+.first_player_name,.second_player_name {
+  font-family: inherit;
+  width: 500px;
+  font-size: 15px;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 50rem;
+  border: none;
+}
+
+.input-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: absolute;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  z-index: 1001;
+  padding: 200px;
+}
+
+.main_buttons {
+  position: absolute;
+  top: 0;
+  z-index: 1010;
+  transition: 0.2s all;
+}
+
+.confirm,.rules,.resetNames {
+  text-transform: uppercase;
+  border: none;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  cursor: pointer;
+  z-index: 1005;
+  margin-top: 100px;
+  transition: 0.2s all;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  padding: 1.4rem 5.0rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+.rules {
+  margin-right: 30px;
+  margin-top: 5px;
+  font-size: 15px;
+  padding: 1.4rem 2.0rem;
+}
+.resetNames {
+  margin-top: 5px;
+  font-size: 15px;
+  padding: 1.4rem 2.0rem;
+}
+
+.confirm:hover,.rules:hover,.resetNames:hover {
+  background-color: #c7365f;
+  color: navajowhite;
+}
+
+.hidden {
+  display: none;
+}
+
+.titleName {
+  text-transform: uppercase;
+  position: absolute;
+  top: 40px;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.rules_modal {
+  z-index: 1010;
+  transition: 0.2s all;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  font-size: 20px;
+  text-align: center;
+  color: whitesmoke;
+  background-color: #c7365f;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  list-style-type: none;
+}
+.close_modal {
+  margin: 10px;
+  position: absolute;
+  top: 1.2rem;
+  right: 3rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
