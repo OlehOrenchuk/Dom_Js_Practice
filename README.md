@@ -12,5 +12,8 @@
 <li><h2>Pig game 🐷</h2>
 <h5>Game where 2 players play a die. For win you must die till sum of all previous dice reach 50 points. If player die number 1, he/she lose.</h5></li>
 <hr>
-<img src="images/pig_game.png"/>
+<li><h2>Bank mini-app 💰</h2>
+<h5>Bank mini-application for user`s manipulation with money, with next functionallity: logging with own credentials, transfer money to other users, loaning money, deleting account and sorting movements statistic.</h5></li>
+<hr>
+<img src="images/bank_app.png"/>
 </ol>
