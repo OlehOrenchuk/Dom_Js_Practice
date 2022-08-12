@@ -146,11 +146,39 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 
+const  startLogOutTimer = function (){
+  const tick = function () {
+    const min = String(Math.trunc(time / 60)).padStart(2,0)
+    const sec = String(time % 60).padStart(2,0)
+
+    // In each call, print the remaining time to UI
+    labelTimer.textContent = `${min}:${sec}`
+
+    // When 0 seconds, stop timer and log out user
+    if(time === 0){
+      clearInterval(timer)
+      // Hide UI and welcome message
+      labelWelcome.textContent = `Log in to get started`
+      containerApp.style.opacity = 0;
+    }
+
+    // Decrease 1s
+    time--;
+
+  }
+  // Set time to 5 minutes
+  let time = 300
+
+  // Call the timer every second
+  tick();
+  const timer = setInterval(tick,1000)
+  return timer
+}
 /*
   implementing login
 */
 
-let currentAccount;
+let currentAccount, timer;
 
 btnLogin.addEventListener('click',function (e) {
   // Prevent form from submitting
@@ -166,6 +194,10 @@ btnLogin.addEventListener('click',function (e) {
     // Clear input fields
     inputLoginUsername.value = inputLoginPin.value = ''
     inputLoginPin.blur();
+
+    // Timer
+    if(timer) clearInterval(timer)
+    timer = startLogOutTimer()
 
     // Update UI
     updateUI(currentAccount);
@@ -186,6 +218,10 @@ btnLoan.addEventListener('click',function (e){
 
     //Update UI
     updateUI(currentAccount)
+
+    // Reset timer
+    clearInterval(timer)
+    timer = startLogOutTimer()
   }
 })
 /*
@@ -211,6 +247,10 @@ btnTransfer.addEventListener('click',function (e){
 
     // Update UI
     updateUI(currentAccount);
+
+    // Reset timer
+    clearInterval(timer)
+    timer = startLogOutTimer()
   }
 })
 
@@ -343,7 +383,7 @@ GOOD LUCK 😀
 // console.log(result)
 // const result2 = movements.findIndex(el => el < 200)
 // console.log(result2)
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 // const overalBalance = accounts
 //     .map(acc => acc.movements)
@@ -355,3 +395,4 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 //     .flatMap(acc => acc.movements)
 //     .reduce((acc,mov) => acc + mov,0)
 // console.log(overalBalance2)
+
