@@ -174,6 +174,7 @@ const  startLogOutTimer = function (){
   const timer = setInterval(tick,1000)
   return timer
 }
+
 /*
   implementing login
 */
@@ -194,6 +195,7 @@ btnLogin.addEventListener('click',function (e) {
     // Clear input fields
     inputLoginUsername.value = inputLoginPin.value = ''
     inputLoginPin.blur();
+
 
     // Timer
     if(timer) clearInterval(timer)
@@ -222,6 +224,7 @@ btnLoan.addEventListener('click',function (e){
     // Reset timer
     clearInterval(timer)
     timer = startLogOutTimer()
+
   }
 })
 /*
@@ -251,6 +254,7 @@ btnTransfer.addEventListener('click',function (e){
     // Reset timer
     clearInterval(timer)
     timer = startLogOutTimer()
+
   }
 })
 
@@ -384,6 +388,7 @@ GOOD LUCK 😀
 // const result2 = movements.findIndex(el => el < 200)
 // console.log(result2)
 // const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
 
 // const overalBalance = accounts
 //     .map(acc => acc.movements)
