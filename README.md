@@ -17,4 +17,8 @@
 <h5>Bank mini-application for user`s manipulation with money, with next functionallity: logging with own credentials, transfer money to other users, loaning money, deleting account and sorting movements statistic.</h5></li>
 <hr>
 <img src="images/bank_app.png"/>
+<li><h2>Website for bank 💰</h2>
+<h5>Bank mini-website for registration and reading information about bank`s possibilities(without some functionallity like Laze Loading, Revealing on scroll, Sticky navbar with using Intersection observer API) </h5></li>
+<hr>
+<img src="images/bank_full_app.png"/>
 </ol>
