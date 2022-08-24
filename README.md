@@ -1,5 +1,5 @@
 <ol>
-<h1 align="center">❕Mini-programs were written for HTML, CSS and DOM manipulation practice 🧑‍💻</h1>
+<h1 align="center">❕Mini-programs were written for JS, HTML, CSS and DOM manipulation practice 🧑‍💻</h1>
 
 <li><h2>Guess My Number ❓</h2>
 <h4>Game where player can guess the number within boundaries entered at the beginning of the game.</h4></li>
@@ -21,4 +21,8 @@
 <h5>Bank mini-website for registration and reading information about bank`s possibilities(without some functionallity like Laze Loading, Revealing on scroll, Sticky navbar with using Intersection observer API) </h5></li>
 <hr>
 <img src="images/bank_full_app.png"/>
+<li><h2>Geolocation 📍</h2>
+<h5>API which fetch geolocation data(country, city) from geocode.xyz by latitude and longtitude and fetch country data from restcountries.com with detail info about country.</h5></li>
+<hr>
+<img src="images/geocoding.png"/>
 </ol>
