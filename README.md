@@ -21,7 +21,7 @@
 <h5>Bank mini-website for registration and reading information about bank`s possibilities(without some functionallity like Laze Loading, Revealing on scroll, Sticky navbar with using Intersection observer API) </h5></li>
 <hr>
 <img src="images/bank_full_app.png"/>
-<li><h2>Geolocation 📍</h2>
+<li><h2>Geocoding 📍</h2>
 <h5>API which fetch geolocation data(country, city) from geocode.xyz by latitude and longtitude and fetch country data from restcountries.com with detail info about country.</h5></li>
 <hr>
 <img src="images/geocoding.png"/>
