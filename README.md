@@ -25,4 +25,8 @@
 <h5>API which fetch geolocation data(country, city) from geocode.xyz by latitude and longtitude and fetch country data from restcountries.com with detail info about country.</h5></li>
 <hr>
 <img src="images/geocoding.png"/>
+<li><h2>Restaurant 🍴</h2>
+<h5>Restaurant mini website on HTML and CSS using Tailwind framework.</h5></li>
+<hr>
+<img src="images/restaurant_TL.png"/>
 </ol>
